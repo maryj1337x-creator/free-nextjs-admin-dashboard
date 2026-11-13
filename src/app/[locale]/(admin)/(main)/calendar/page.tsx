@@ -6,6 +6,8 @@ import "@fullcalendar/react/themes/classic/theme.css";
 
 import { Metadata } from "next";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Next.js Calender | TailAdmin - Next.js Dashboard Template",
   description:
