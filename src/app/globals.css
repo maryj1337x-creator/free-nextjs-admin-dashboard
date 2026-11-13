@@ -1,11 +1,23 @@
+@import "tailwindcss";
+
 @layer utilities {
   .glass-panel {
-    @apply bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.08)];
+    background-color: color-mix(in srgb, white 70%, transparent);
+    backdrop-filter: blur(24px);
+    border: 1px solid color-mix(in srgb, white 20%, transparent);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
   }
+
   .glass-card {
-    @apply bg-white/50 dark:bg-zinc-900/50 backdrop-blur-md border border-white/30 dark:border-white/10 shadow-lg;
+    background-color: color-mix(in srgb, white 50%, transparent);
+    backdrop-filter: blur(12px);
+    border: 1px solid color-mix(in srgb, white 30%, transparent);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
   }
+
   .glass-pill {
-    @apply bg-white/80 dark:bg-zinc-800/80 backdrop-blur-lg border border-white/40 dark:border-zinc-700/50;
+    background-color: color-mix(in srgb, white 80%, transparent);
+    backdrop-filter: blur(16px);
+    border: 1px solid color-mix(in srgb, white 40%, transparent);
   }
 }
